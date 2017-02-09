@@ -58,6 +58,13 @@ public class SeedData {
         for (Quote m : quoteService.findAll()) {
             log.info(m.toString());
         }
+
+        log.info("Quotes found with findByAuthorName():");
+        log.info("-------------------------------");
+        for (Author m : authorService.findByAuthorName("Albert Einstein")) {
+            log.info(m.toString());
+        }
+        
         return new SeedData();
     }
 }
