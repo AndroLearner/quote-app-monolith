@@ -1,10 +1,11 @@
-package edu.cmu.mis.iccfb.service;
+	package edu.cmu.mis.iccfb.service;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import edu.cmu.mis.iccfb.model.Author;
 import edu.cmu.mis.iccfb.model.Quote;
 
 
@@ -25,5 +26,5 @@ public class QuoteServiceImpl implements QuoteServiceCustom {
         Quote q = quotes.get(random.nextInt(quotes.size()));
         return q;
     }
-
+    List<Quote> findByAuthorName(String author.getName())
 }
